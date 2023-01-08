@@ -72,7 +72,6 @@ namespace Quiz
                 {
                     options = Convert.ToString(reader[2]);
                     answer = Convert.ToString(reader[3]);
-                    correction = Convert.ToString(reader[4]);
 
                     string[] opArr = options.Split(',');
 
@@ -83,31 +82,31 @@ namespace Quiz
                         case 1:
                             if (opArr[0].Contains(answer))
                             {
-                                plus = "Correct! " + correction;
+                                plus = "Correct! " ;
                             }
                             else
                             {
                                 
-                                plus = "Wrong! " + correction;
+                                plus = "Wrong! " ;
                             }
                             break;
                         case 2:
                             if (opArr[1].Contains(answer))
                             {
-                                plus = "Correct! " + correction;
+                                plus = "Correct! " ;
                             }
                             else
                             {
-                                plus = "Wrong! " + correction;
+                                plus = "Wrong! " ;
                             }
                             break;
                         case 3:
                             if (opArr[2].Contains(answer)){
-                                plus = "Correct! " + correction;
+                                plus = "Correct! ";
                             }
                             else
                             {
-                                plus = "Wrong! " + correction;
+                                plus = "Wrong! ";
                             }
                             break;
                         default:

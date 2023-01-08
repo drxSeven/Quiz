@@ -2,19 +2,22 @@
 
 using Quiz;
 
+
+
 Console.WriteLine("Please select what core: 1 or 2");
 int core = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("How many questions?");
+int questions = Convert.ToInt32(Console.ReadLine());
 
 Random rnd = new Random();
 int rNum = rnd.Next(1,1);
 
 Quiz_One q = new Quiz_One();
 
-bool on = true;
 int wrong = 0;
 int right = 0;
 
-while (wrong <= 27)
+if (wrong <= 10)
 {
     if (core == 1)
     {
@@ -42,4 +45,8 @@ while (wrong <= 27)
     {
         Console.WriteLine("Not a valid option");
     }
+}
+else
+{
+    Console.WriteLine("Questions: " + questions + "Right: " + right + "Wrong: " + wrong);
 }
