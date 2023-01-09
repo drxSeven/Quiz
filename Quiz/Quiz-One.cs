@@ -101,12 +101,23 @@ namespace Quiz
                             }
                             break;
                         case 3:
-                            if (opArr[2].Contains(answer)){
+                            if (opArr[2].Contains(answer))
+                            {
                                 plus = "Correct! ";
                             }
                             else
                             {
                                 plus = "Wrong! ";
+                            }
+                            break;
+                        case 4:
+                            if (opArr[3].Contains(answer))
+                            {
+                                plus = "Correct!";
+                            }
+                            else
+                            {
+                                plus = "Wrong!";
                             }
                             break;
                         default:
